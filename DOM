@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="title_top">Home Page</h1>
+		</header>
+		<nav>
+			<ul class="nav_ul">
+				<li class="nav_li" id="index_color"><a href="index.php">Home</a></li>
+				<li class="nav_li"><a href="/classes_view/cit261.html">CIT 261</a></li>
+			</ul>
+		</nav>
+            <br>
+            <form action="/index.php" method="post" id="navigate_main">
+
+		<h2><a href=".?action=show_cit261">CIT 261</a></h2>
+		<p>This page holds all my assignments from CIT 313</p>
+                
+                <h2><a href=".?action=show_cs313">CS 313</a></h2>
+		<p>This page holds all my assignments from CS 313</p>
+                </form>
+	</body>
+</html>
