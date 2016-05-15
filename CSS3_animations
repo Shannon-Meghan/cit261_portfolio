@@ -1,0 +1,21 @@
+        <style>
+
+            p {
+                -webkit-animation-name: paragraph; /* Chrome, Safari, Opera */
+                -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+                animation-name: paragraph;
+                animation-duration: 4s;
+            }
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes paragraph {
+                from {color: pink;}
+                to {color: blue;}
+            }
+
+            /* Standard syntax */
+            @keyframes paragraph {
+                from {color: pink;}
+                to {color: blue;}
+            }
+
+        </style>
