@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Portfolio | Store Name </title>
+        <meta charset="UTF-8">
+        <meta name="author" content ="Katy Browning">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/sandboxcss.css" type="text/css" rel="stylesheet"/>
+        <link href="/normalize.css.css" type="text/css" rel="stylesheet"/>
+    </head>
+<body>
+<header>
+
+        </header>
+        <nav>
+            <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/navigation.php' ?>  
+
+        </nav>
+        <main>
+
+            <article>
+                <h1>Store Name</h1>
+                <div id="storename">
+                <label for="serveri"> Enter Name: </label>
+<input type='text' name="server" id="saveServer"/> 
+<button onclick="saveData()" type="button" value="Save" id="Save" data-theme="a">Save</button>
+<script> function saveData(){ 
+    var input = document.getElementById("saveServer").value;
+    localStorage.setItem("server", input); 
+document.getElementById("saveServer").value = localStorage.getItem("server"); 
+document.write("I have stored the name " + localStorage.getItem("server")+ " Hit refresh and then click on retreive name to test my storage capabilities");
+} 
+</script> 
+
+<script>
+function retrieveName(){
+   document.getElementById("saveServer").value = localStorage.getItem("server"); 
+   }
+</script>
+
+
+<div id="saveServer">
+<button type="button" onclick="retrieveName()">Retrieve Name</button>
+</div>
+                </div>
+ </article>
+            <footer>
+                <?php include $_SERVER['DOCUMENT_ROOT'] . '/module/footer.php' ?> 
+            </footer> 
+        </main>
+
+</body>
+</html>
